@@ -1,0 +1,81 @@
+
+.detailsBanner{
+    margin-bottom: 0;
+    padding-top: 120px;
+    min-height: 700px;
+}
+.detailsBanner .backdrop-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    overflow: hidden;
+    z-index: -1;
+}
+.detailsBanner .backdrop-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.movieDetailsWrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.movieDetailsWrap .left-block{
+    max-width: 350px;
+}
+.movieDetailsWrap .left-block img{
+    border-radius: 20px;
+}
+.detailsBanner .opacity-layer{
+    z-index: -1;
+}
+
+.movieDetailsWrap .sub-title{
+   margin: 15px 0;
+   opacity: 0.4;
+   font-size: 22px;
+   line-height: 30px;
+   font-weight: 500;
+}
+.movieDetailsWrap .genres{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+    flex-flow: row wrap;
+}
+.movieDetailsWrap .genres span{
+    background-color: #da2f68;
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff;
+    white-space: nowrap;
+}
+.overview{
+    max-width: 700px;
+    line-height: 25px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.movieDetailsWrap .circleRating{
+    height: 90px;
+    width: 90px;
+}
+.movieDetailsWrap .circleRating svg text{
+    font-size: 30px;
+}
+.circleRating{
+    background-color:#04152d;
+    border-radius: 50%;
+}
+
+.info-list{
+    list-style: none;
+    margin-top: 30px;
+    line-height: 40px;
+}

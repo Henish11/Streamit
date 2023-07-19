@@ -1,0 +1,71 @@
+.hero-banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #04152d;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.hero-banner .backdrop-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    overflow: hidden;
+}
+.hero-banner .backdrop-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+.banner-content p{
+    max-width: 600px;
+    font-weight: 300;
+}
+.opacity-layer {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg,rgba(4,21,45,0) 0%,#04152d 79.17%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hero-banner h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+}
+
+/* Btn */
+
+.banner-content button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    outline: 0px;
+    border: 0px currentcolor;
+    margin: 30px 5px 0;
+    cursor: pointer;
+    min-width: 64px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    color: inherit;
+    background-color: rgb(223, 227, 232);
+    color: #04152d;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
