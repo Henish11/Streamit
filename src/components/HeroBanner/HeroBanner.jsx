@@ -17,7 +17,7 @@ const HeroBanner = ({data}) => {
            .then((respone)=>{
               console.log(respone?.data);
               const backInfo = respone?.data?.results[Math.floor(Math.random() * 20)]
-              setBannerImage(`${imgbaseUrl}original${backInfo?.backdrop_path}`)
+              setBannerImage(imgbaseUrl + backInfo?.backdrop_path)
               setBannerInfo(backInfo)
            })
            .catch((err)=>{

@@ -11,23 +11,19 @@ const DetailsBanner = ({movieDetails,video}) => {
     const ImagebaseUrl = useSelector((store => store.home.url))
     const [openModal,setOpenModal] = useState(false)
     
-
-
-    
-
     return (
         <>
             <div className='detailsBanner'>
                 <div className="backdrop-img">
                     <span>
-                        <img src={`${ImagebaseUrl}original${movieDetails?.backdrop_path}`} alt={movieDetails?.title} />
+                        <img src={ImagebaseUrl + movieDetails?.backdrop_path} alt={movieDetails?.title} />
                     </span>
                 </div>
                 <div className="opacity-layer"></div>
                 <div className="smallContainer">
                     <div className="movieDetailsWrap">
                         <div className="left-block">
-                            <img src={`${ImagebaseUrl}original${movieDetails?.poster_path}`} alt={movieDetails?.original_title} />
+                            <img src={ImagebaseUrl + movieDetails?.poster_path} alt={movieDetails?.original_title} />
                         </div>
                         <div className="right-block">
                             <h1 className="title">{movieDetails?.title || movieDetails?.original_name} ({(movieDetails?.release_date) || (movieDetails?.last_air_date)})</h1>

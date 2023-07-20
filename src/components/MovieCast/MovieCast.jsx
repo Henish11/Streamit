@@ -30,7 +30,7 @@ const  MovieCast = ({id,params}) => {
         castDetails?.cast?.map((castinfo)=>{
           return(
             <div className='castCard'>
-              <img src={ImgbaseUrl+'original'+castinfo?.profile_path} alt="" />
+              <img src={ImgbaseUrl + castinfo?.profile_path} alt="Cast" />
               <h3>{castinfo?.name || castinfo?.original_name}</h3>
               <p>{castinfo?.character}</p>
             </div>

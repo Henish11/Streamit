@@ -19,16 +19,16 @@ const MainSlider = ({ data }) => {
     slidesToScroll: 2,
   };
 
-  return(
+  return  data.length === 0 ? <CardShimmer/> : (
     <>
       <Slider {...settings}>
         {
           data.map((ele) => {
             return(
-              <Link to={`/${ele?.first_air_date ? 'tv' : 'movie' }/${ele?.id}`}>
-                <div className="slider-card" key={uuidv4()}>
+              <Link to={`/${ele?.first_air_date ? 'tv' : 'movie' }/${ele?.id}`} key={uuidv4()}>
+                <div className="slider-card" >
                   <div className="image-block">
-                    <img className="card-img" src={ImagebaseUrl + 'original' + ele?.poster_path} alt={ele?.title} />
+                    <img className="card-img" src={ImagebaseUrl + ele?.poster_path} alt={ele?.title} />
                   </div>
                   <div className="content-block">
                     <CircularProgress rating={(ele?.vote_average)} />

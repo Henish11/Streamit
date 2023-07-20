@@ -15,7 +15,7 @@ const App = () => {
   useEffect(()=>{
       axios.get(`${BASE_URL}/configuration?api_key=${API_KEY}`)
            .then((response)=>{
-               dispatch(getUrl(response?.data?.images?.base_url))
+               dispatch(getUrl(response?.data?.images?.base_url+response?.data?.images?.backdrop_sizes.filter((e)=> e === 'original')))
                setData(true)
            })
            .catch((err)=>{
