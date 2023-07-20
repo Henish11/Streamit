@@ -1,6 +1,6 @@
 
 .sliderContainer{
-    padding: 0 40px 60px;
+    margin-bottom: 60px !important;
 }
 .slider-card {
     color: #fff;
@@ -12,7 +12,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .slick-track {
     display: flex !important;
@@ -35,7 +35,7 @@
     height: 50px;
     background-color: #fff;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     right: 10px;
 }
 .slider-card .circleRating svg text{

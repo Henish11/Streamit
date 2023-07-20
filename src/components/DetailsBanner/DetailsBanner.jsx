@@ -1,21 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { v4 as uuidv4 } from 'uuid'
 import CircularProgress from '../../components/CircularProgress/CircularProgress'
-import VideoPlayer from '../../components/VideoPlayer/VideoPlayer'
 import './DetailsBanner.css'
+import Modal from '../Modal/Modal'
+import { ReactComponent as PlayIcon } from '../../assets/icons/playicon.svg'
 
 const DetailsBanner = ({movieDetails,video}) => {
 
     const ImagebaseUrl = useSelector((store => store.home.url))
+    const [openModal,setOpenModal] = useState(false)
+    
 
-    console.log(video);
-
-    const Videokeys = video.filter((ele)=> ele?.type === 'Trailer' ).map((ele)=> ele?.key)
-
-    console.log(Videokeys);
-    const YTkey = Videokeys[Videokeys.length - 1]
-    console.log(YTkey);
 
     
 
@@ -45,11 +41,22 @@ const DetailsBanner = ({movieDetails,video}) => {
                             </div>
                             <div className="rating video-player">
                                 <CircularProgress rating={(movieDetails.vote_average)} />
-                                <VideoPlayer YTkey={YTkey}/>
+                                <div className='play-icon' onClick={()=>{setOpenModal(true)}}>
+                                    <PlayIcon />
+                                    <h4>Watch Trailer</h4>
+                                </div>
+                                
+                                {openModal && 
+                                 <Modal 
+                                   video={video}
+                                   setOpenModal={setOpenModal}
+                                 /> 
+                                }
+                                
                             </div>
                             <div className="overview">
                                 <h4 style={{ marginBottom: '10px', fontSize: '20px' }}>Overview</h4>
-                                {movieDetails?.overview}
+                                <p>{movieDetails?.overview}</p>
                             </div>
                             <ul className="info-list">
                                 <li key={uuidv4()}>

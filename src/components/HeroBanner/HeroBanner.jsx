@@ -37,8 +37,8 @@ const HeroBanner = ({data}) => {
          </span>
        </div>
        <div className="opacity-layer"></div>
-       <div className="banner-content">
-         <div className="mainContainer">
+       <div className="mainContainer">
+         <div className="banner-content ">
             <h1>{bannerInfo?.name || bannerInfo?.title}</h1>
             <p>{bannerInfo?.overview}</p>
             <button className='play-btn'>Play</button> <button className='info-btn'>More Info</button>

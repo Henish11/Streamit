@@ -23,7 +23,7 @@ const Documentaries = () => {
 
 
   return (
-    <div className='sliderContainer'>
+    <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Documentaries</h3>
         <MainSlider data={streamData}/> 
     </div>

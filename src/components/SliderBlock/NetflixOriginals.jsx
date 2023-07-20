@@ -23,7 +23,7 @@ const NetflixOriginals = () => {
 
 
   return (
-    <div className='sliderContainer'>
+    <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Netflix Originals</h3>
         <MainSlider data={streamData}/> 
     </div>

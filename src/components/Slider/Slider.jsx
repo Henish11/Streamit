@@ -5,6 +5,7 @@ import './Slider.css'
 import { v4 as uuidv4 } from "uuid"
 import { Link } from "react-router-dom";
 import CircularProgress from "../CircularProgress/CircularProgress";
+import { CardShimmer } from "../../Shimmer/Shimmer";
 
 const MainSlider = ({ data }) => {
 
@@ -14,16 +15,16 @@ const MainSlider = ({ data }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 2,
   };
 
-  return (
+  return(
     <>
       <Slider {...settings}>
         {
           data.map((ele) => {
-            return (
+            return(
               <Link to={`/${ele?.first_air_date ? 'tv' : 'movie' }/${ele?.id}`}>
                 <div className="slider-card" key={uuidv4()}>
                   <div className="image-block">

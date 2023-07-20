@@ -34,7 +34,39 @@
 .detailsBanner .opacity-layer{
     z-index: -1;
 }
-
+.video-player svg polygon{
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: #fff;
+    transform: translateY(0);
+    transition: all .7s ease-in-out;
+}
+.video-player svg circle{
+    stroke: #fff;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 1300;
+    transition: all .5s ease-in-out;
+}
+.video-player .play-icon:hover svg polygon,
+.video-player .play-icon:hover svg circle{
+    stroke-dashoffset: 0;
+    stroke: #e50914;
+}
+.rating.video-player{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.video-player .play-icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.video-player .play-icon:hover h4{
+    color: #e50914;
+    transition: all 0.4s ease-in-out;
+}
 .movieDetailsWrap .sub-title{
    margin: 15px 0;
    opacity: 0.4;
@@ -49,22 +81,28 @@
     flex-flow: row wrap;
 }
 .movieDetailsWrap .genres span{
-    background-color: #da2f68;
+    background-color: #e50914;
     padding: 3px 5px;
     font-size: 12px;
+    line-height: 16px;
     border-radius: 4px;
     color: #fff;
     white-space: nowrap;
 }
+
 .overview{
     max-width: 700px;
-    line-height: 25px;
-    font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
 }
+.overview p{
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.8;
+}
+
 .movieDetailsWrap .circleRating{
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
 }
 .movieDetailsWrap .circleRating svg text{
     font-size: 30px;

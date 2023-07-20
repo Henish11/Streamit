@@ -23,7 +23,7 @@ const TopRated = () => {
 
 
   return (
-    <div className='sliderContainer'>
+    <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Top Rated Movies</h3>
         <MainSlider data={streamData}/> 
     </div>

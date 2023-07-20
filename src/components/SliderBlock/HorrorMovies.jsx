@@ -23,7 +23,7 @@ const HorrorMovies = () => {
 
 
   return (
-    <div className='sliderContainer'>
+    <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Horror Movies</h3>
         <MainSlider data={streamData}/> 
     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from 'react'
 import './Header.css'
-import {ReactComponent as SiteLogo} from '../../assets/icons/logo.svg'
+import mainLogo from '../../assets/icons/logo.png'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
       <nav className='mainContainer'>
         <div className="left-block">
           <span className="logo">
-           <Link to='/'><SiteLogo/></Link>
+           <Link to='/'><img src={mainLogo} alt="Logo" /></Link>
           </span>
           <ul className='navbar'>
             <li>Movies</li>

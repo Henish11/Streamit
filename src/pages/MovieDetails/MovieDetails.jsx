@@ -2,9 +2,9 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { BASE_URL, API_KEY } from '../../utils/config'
-
 import './MovieDetails.css'
 import DetailsBanner from '../../components/DetailsBanner/DetailsBanner'
+import MovieCast from '../../components/MovieCast/MovieCast'
 
 const MovieDetails = () => {
 
@@ -45,6 +45,7 @@ const MovieDetails = () => {
    return (
      <>
        <DetailsBanner movieDetails={movieDetails} video={video} />
+       <MovieCast id={id} params={params}/>
      </>
    )
 }

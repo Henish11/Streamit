@@ -23,7 +23,7 @@ const Trending = () => {
 
 
   return (
-    <div className='sliderContainer'>
+    <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Trending</h3>
         <MainSlider data={streamData}/> 
     </div>
