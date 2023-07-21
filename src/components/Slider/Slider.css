@@ -2,55 +2,13 @@
 .sliderContainer{
     margin-bottom: 80px !important;
 }
-.slider-card {
-    color: #fff;
-    position: relative;
-    cursor: pointer;
-}
-.slider-card .card-img{
-    width: 100%;
-    min-width: 244px;
-    height: 365px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    background: #1d4277;
-}
 .slick-track {
     display: flex !important;
     gap: 30px;
     margin-left: -10px !important;
 }
-.slider-card h3{
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    line-height: 24px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.slider-card .circleRating{
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 60px;
-    right: 10px;
-}
-.slider-card .circleRating svg text{
-    fill: #04152d !important;
-    font-size: 30px;
-    font-weight: 600;
-}
-.slider-card .date{
-    font-size: 15px;
-    opacity: .5;
-}
-.sliderTitle{
+.sliderTitle,
+.mainTitle{
     font-size: 25px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -62,6 +20,9 @@
     color: transparent;
     text-shadow: 2px 2px 20px #e50914;
     margin-left:15px
+}
+.mainTitle{
+    margin-left: 0;
 }
 .slick-slider .slick-prev{
     left: 0;

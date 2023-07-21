@@ -8,6 +8,8 @@ import { BASE_URL,API_KEY } from './utils/config'
 import { useDispatch } from 'react-redux'
 import { getUrl } from './redux/homeSlice'
 import MovieDetails from './pages/MovieDetails/MovieDetails'
+import MovieList from './pages/MovieList/MovieList'
+import TvList from './pages/TvList/TvList'
 
 const App = () => {
   const [data,setData] = useState(false)
@@ -27,9 +29,11 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
-            <Route index element={<Home data={data} />}></Route>
-            <Route path='/:params/:id' element={<MovieDetails/>}></Route>
-            <Route path='*' element={<Errors />}></Route>
+            <Route index element={<Home data={data} />} />
+            <Route path='/:params/:id' element={<MovieDetails/>} />
+            <Route path='/movie' element={<MovieList/>} />
+            <Route path='/tv' element={<TvList/>} />
+            <Route path='*' element={<Errors />}/>
           </Route>
         </Routes>
       </BrowserRouter>

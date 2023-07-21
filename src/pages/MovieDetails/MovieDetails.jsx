@@ -14,6 +14,7 @@ const MovieDetails = () => {
    const [movieDetails, SetMovieDetails] = useState([])
    const [video,setVideo] = useState([])
    const [officialVideos,setOfficialVideos] = useState([])
+   const [castDetails,setCastDetails] = useState([])
 
 
    // Details
@@ -27,10 +28,6 @@ const MovieDetails = () => {
             console.log(err);
          })
    }
-   useEffect(() => {
-      getMovieDetails()
-      getVideo()
-   }, [id])
 
    // Videos
    const getVideo = () =>{
@@ -44,12 +41,27 @@ const MovieDetails = () => {
             })
    }
 
-   console.log(video);
+   // Movie Cast
+   const getMovieCast = () =>{
+      axios.get(`${BASE_URL}/${params}/${id}/credits?api_key=${API_KEY}`)
+           .then((respone)=>{
+            setCastDetails(respone?.data)
+           })
+           .catch((err)=>{
+               console.log(err);
+           })
+    }
+
+    useEffect(() => {
+      getMovieDetails()
+      getVideo()
+      getMovieCast()
+   }, [id])
 
    return (
      <>
        <DetailsBanner movieDetails={movieDetails} video={video} />
-       <MovieCast id={id} params={params}/>
+       <MovieCast castDetails={castDetails}/>
        <OfficialVideos videos={officialVideos}/>
        <SimilarMovies id={id} params={params}/>
        <Recommendations id={id} params={params}/>

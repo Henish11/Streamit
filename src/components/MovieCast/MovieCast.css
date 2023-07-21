@@ -3,15 +3,43 @@
     align-items: center;
     overflow: hidden;
     gap: 18px;
+    margin-bottom: 60px;
 }
 .castCard{
     text-align: center;
 }
 .castCard img{
-    width: 190px;
-    height: 190px;
+    width: 215px;
+    height: 215px;
     margin-bottom: 25px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top center;
+}
+.dummyImg{
+    background-color: #16335c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px #e50914;
+}
+.castCard .dummyImg{
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+} 
+.movieCard .dummyImg{
+    width: 100%;
+    min-width: 244px;
+    height: 365px;
+    border-radius: 12px;
+}
+.movieDetailsWrap .dummyImg{
+    width: 350px;
+    height: 525px;
+    border-radius: 20px;
 }

@@ -3,8 +3,36 @@
    gap: 30px;
    align-items: start;
    overflow-x: scroll;
+   margin-bottom: 80px;
+   padding-bottom: 30px;
 }
-
+.videoWrap::-webkit-scrollbar {
+    height: 6px;
+    border-radius: 4px;
+    background-color: #16335c;
+}
+.videoWrap::-webkit-scrollbar-thumb {
+    background-color: #556780;
+    border-radius: 4px;
+}
+.videoBox{
+    cursor: pointer;
+}
 .videoBox img{
     width: 265px;
+    border-radius: 15px;
+}
+.videoBox .thumbBox{
+    position: relative;
+    margin-bottom: 10px;
+}
+.videoBox .thumbBox .play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.videoBox .play-icon svg{
+    width: 40px;
+    height: 40px;
 }

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import MainSlider from '../Slider/Slider'
 import axios from 'axios'
-import { BASE_URL, requests } from '../../utils/config'
+import { requests } from '../../utils/config'
 
-const Documentaries = () => {
+const UpcomingMovies = () => {
 
   const [streamData,setStreamData] = useState([])
 
   const getStreamData = () =>{
-    axios.get(`${BASE_URL}${requests.fetchDocumentaries}`)
+    axios.get(requests.fetchUpcomingMovies)
          .then((respone)=>{
             console.log(respone?.data?.results);
             setStreamData(respone?.data?.results)
@@ -22,13 +22,13 @@ const Documentaries = () => {
   },[])
 
 
-  return (
+  return streamData.length !== 0 && (
     <div className='sliderContainer mainContainer'>
-        <h3 className='sliderTitle'>Documentaries</h3>
+        <h3 className='sliderTitle'>Upcoming Movies</h3>
         <MainSlider data={streamData}/> 
     </div>
 
   )
 }
 
-export default Documentaries
+export default UpcomingMovies

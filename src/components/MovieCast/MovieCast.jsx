@@ -1,36 +1,21 @@
-import axios from 'axios'
-import React, { useEffect,useState } from 'react'
-import { BASE_URL,API_KEY } from '../../utils/config'
+import React from 'react'
 import { useSelector } from 'react-redux'
 import './MovieCast.css'
+import { v4 as uuidv4 } from 'uuid'
 
-const  MovieCast = ({id,params}) => {
+const  MovieCast = ({castDetails}) => {
 
   const ImgbaseUrl = useSelector((store)=>store.home.url)
-  const [castDetails,setCastDetails] = useState([])
-  const getMovieCast = () =>{
-    axios.get(`${BASE_URL}/${params}/${id}/credits?api_key=${API_KEY}`)
-         .then((respone)=>{
-          setCastDetails(respone?.data)
-         })
-         .catch((err)=>{
-             console.log(err);
-         })
-  }
-  console.log(castDetails);
-  useEffect(()=>{
-    getMovieCast()
-  },[id])
-  
 
   return (
     <div className='smallContainer'>
+      <h3 className='mainTitle'>Top Cast</h3>
       <div className="castWrap">
       {
         castDetails?.cast?.map((castinfo)=>{
           return(
-            <div className='castCard'>
-              <img src={ImgbaseUrl + castinfo?.profile_path} alt="Cast" />
+            <div className='castCard' key={uuidv4()}>
+              { castinfo?.profile_path ? <img src={ImgbaseUrl + castinfo?.profile_path} alt="Cast" /> : <div className="dummyImg"> No Image</div> } 
               <h3>{castinfo?.name || castinfo?.original_name}</h3>
               <p>{castinfo?.character}</p>
             </div>

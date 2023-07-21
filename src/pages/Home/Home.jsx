@@ -7,7 +7,7 @@ import ActionMovies from '../../components/SliderBlock/ActionMovies'
 import ComedyMovies from '../../components/SliderBlock/ComedyMovies'
 import HorrorMovies from '../../components/SliderBlock/HorrorMovies'
 import RomanceMovies from '../../components/SliderBlock/RomanceMovies'
-import Documentaries from '../../components/SliderBlock/Documentaries'
+import UpcomingMovies from '../../components/SliderBlock/UpcomingMovies'
 
 const Home = ({data}) => {
   return (
@@ -15,12 +15,12 @@ const Home = ({data}) => {
       <HeroBanner data={data}/>
       <Trending/>
       <NetflixOriginals/>
+      <UpcomingMovies/>
       <TopRated/>
       <ActionMovies/>
       <ComedyMovies/>
       <HorrorMovies/>
       <RomanceMovies/>
-      <Documentaries/>
     </>
   )
 }

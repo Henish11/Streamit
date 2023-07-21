@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import { BASE_URL,requests } from '../../utils/config'
+import {requests } from '../../utils/config'
 import axios from 'axios'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 import './HeroBanner.css'
@@ -13,7 +13,7 @@ const HeroBanner = ({data}) => {
   const imgbaseUrl = useSelector((store)=>store.home.url)
 
   const getBannerData = ()=>{
-        axios.get(`${BASE_URL}${requests.fetchTrending}`)
+        axios.get(requests.fetchTrending)
            .then((respone)=>{
               console.log(respone?.data);
               const backInfo = respone?.data?.results[Math.floor(Math.random() * 20)]
@@ -33,7 +33,7 @@ const HeroBanner = ({data}) => {
     <div className='hero-banner'>
        <div className="backdrop-img">
          <span>
-            {data ? <img src={bannerImage} alt="banner" /> : null}
+            {bannerImage ? <img src={bannerImage} alt="banner" /> : null}
          </span>
        </div>
        <div className="opacity-layer"></div>

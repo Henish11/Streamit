@@ -22,7 +22,7 @@ const Recommendations = ({id,params}) => {
   },[id])
 
 
-  return (
+  return streamData.length !== 0 && (
     <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Recommendations</h3>
         <MainSlider data={streamData}/> 

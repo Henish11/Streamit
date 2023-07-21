@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import MainSlider from '../Slider/Slider'
 import axios from 'axios'
-import { BASE_URL, requests } from '../../utils/config'
+import {requests } from '../../utils/config'
 
 const NetflixOriginals = () => {
 
   const [streamData,setStreamData] = useState([])
 
   const getStreamData = () =>{
-    axios.get(`${BASE_URL}${requests.fetchNetflixOriginals}`)
+    axios.get(requests.fetchNetflixOriginals)
          .then((respone)=>{
             console.log(respone?.data?.results);
             setStreamData(respone?.data?.results)
@@ -22,7 +22,7 @@ const NetflixOriginals = () => {
   },[])
 
 
-  return (
+  return streamData.length !== 0 && (
     <div className='sliderContainer mainContainer'>
         <h3 className='sliderTitle'>Netflix Originals</h3>
         <MainSlider data={streamData}/> 

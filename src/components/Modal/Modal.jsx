@@ -12,7 +12,7 @@ const Modal = ({video,setOpenModal}) => {
     return (
         <div className='modalWrap'>
             <div className="modalContainer">
-                <h3>Watch Trailer</h3>
+                <h3>Watch Video </h3>
                 <AiOutlineCloseCircle className='close-btn' onClick={()=>{setOpenModal(false)}}/>
                 <VideoPlayer YTkey={YTkey} />
             </div>

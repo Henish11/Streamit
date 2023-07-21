@@ -32,8 +32,8 @@ const Header = () => {
            <Link to='/'><img src={mainLogo} alt="Logo" /></Link>
           </span>
           <ul className='navbar'>
-            <li>Movies</li>
-            <li>TV</li>
+            <li> <Link to='/movie'>Movies</Link>  </li>
+            <li> <Link to='/tv'>TV</Link> </li>
           </ul>
         </div>
         <div className="right-block">

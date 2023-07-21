@@ -15,12 +15,12 @@
 .shimmer-card-effect{
     position: absolute;
     top: 50%;
-    transform: rotate(5deg) translateY(-50%);
+    transform: translateY(-50%);
     height: 90%;
     width: 0px;
-    background: #28538f50;
-    box-shadow: 0 0 30px 10px #28538f50;
-    animation: float 0.8s infinite alternate;
+    background: #28538f70;
+    box-shadow: 0 0 50px 10px #28538f70;
+    animation: float 0.5s infinite alternate;
     overflow: hidden;
 }
 

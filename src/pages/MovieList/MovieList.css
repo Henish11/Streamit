@@ -1,0 +1,11 @@
+.listsWrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.listsWrap .movieCard{
+   width: calc(16.66% - 25px);
+}
+.mainContainer.withSpace{
+    padding-top: 120px;
+}
