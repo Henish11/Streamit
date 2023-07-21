@@ -1,0 +1,10 @@
+.videoWrap{
+   display: flex;
+   gap: 30px;
+   align-items: start;
+   overflow-x: scroll;
+}
+
+.videoBox img{
+    width: 265px;
+}

@@ -24,6 +24,7 @@
 .header .logo a{
     height: 50px;
     display: flex;
+    outline: 0;
 }
 .header .logo svg{
     max-width: 150px;

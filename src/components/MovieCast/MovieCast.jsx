@@ -20,7 +20,7 @@ const  MovieCast = ({id,params}) => {
   console.log(castDetails);
   useEffect(()=>{
     getMovieCast()
-  },[])
+  },[id])
   
 
   return (

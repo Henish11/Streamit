@@ -34,6 +34,16 @@
 .detailsBanner .opacity-layer{
     z-index: -1;
 }
+.movieDetailsWrap h1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    text-shadow: 2px 2px 20px #e50914;
+}
+
 .video-player svg polygon{
     stroke-dasharray: 240;
     stroke-dashoffset: 480;

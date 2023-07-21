@@ -1,10 +1,11 @@
 
 .sliderContainer{
-    margin-bottom: 60px !important;
+    margin-bottom: 80px !important;
 }
 .slider-card {
     color: #fff;
     position: relative;
+    cursor: pointer;
 }
 .slider-card .card-img{
     width: 100%;
@@ -50,8 +51,17 @@
     opacity: .5;
 }
 .sliderTitle{
-    color: #fff;
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 900;
     margin-bottom: 20px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
+    text-shadow: 2px 2px 20px #e50914;
+    margin-left:15px
 }
 .slick-slider .slick-prev{
     left: 0;
