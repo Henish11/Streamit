@@ -34,7 +34,6 @@
 } 
 .movieCard .dummyImg{
     width: 100%;
-    min-width: 244px;
     height: 365px;
     border-radius: 12px;
 }
@@ -42,4 +41,17 @@
     width: 350px;
     height: 525px;
     border-radius: 20px;
+}
+
+@media (max-width:1199px){
+    .castCard img {
+        width: 180px;
+        height: 180px;
+    }
+}
+@media (max-width:840px){
+    .castCard img {
+        width: 168px;
+        height: 168px;
+    }
 }

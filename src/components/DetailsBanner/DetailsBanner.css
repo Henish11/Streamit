@@ -3,6 +3,7 @@
     margin-bottom: 0;
     padding-top: 120px;
     min-height: 640px;
+    padding-bottom: 50px;
 }
 .detailsBanner .backdrop-img {
     width: 100%;
@@ -138,4 +139,40 @@
 }
 .infoList span>span{
     opacity: 0.6;
+}
+.castCard p{
+    opacity: 0.8;
+}
+
+/* Responsive */
+
+
+@media (max-width:1279px) {
+    .movieDetailsWrap {
+        gap: 40px;
+    }
+    .movieDetailsWrap .left-block {
+        max-width: 300px;
+    }
+}
+
+@media (max-width:576px) {
+    .movieDetailsWrap{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .movieDetailsWrap h1 {
+        text-align: center;
+        font-size: 22px;
+        line-height: 30px;  
+    }
+    .movieDetailsWrap .left-block {
+        max-width: 250px;
+        margin: auto;
+    }
+    .movieDetailsWrap .left-block  img{
+        border-radius: 10px;
+    }
+    
+    
 }

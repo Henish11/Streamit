@@ -45,7 +45,7 @@ const HeroBanner = ({data}) => {
          <div className="banner-content ">
             <h1>{bannerInfo?.name || bannerInfo?.title}</h1>
             <p>{bannerInfo?.overview}</p>
-            <button className='playBtn' onClick={()=>{navigate(`/movie/${bannerInfo?.id}`)}}> <FaPlay/> Play Now</button>
+            <button className='playBtn' onClick={()=>{navigate(`/${bannerInfo?.media_type}/${bannerInfo?.id}`)}}> <FaPlay/> Play Now</button>
          </div>
        </div>
     </div>

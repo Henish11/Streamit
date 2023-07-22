@@ -9,3 +9,32 @@
 .mainContainer.withSpace{
     padding-top: 120px;
 }
+
+/* Responsive */
+
+@media (max-width:1440px) {
+    .listsWrap .movieCard {
+        width: calc(20% - 25px);
+    }
+}
+@media (max-width:1024px) {
+    .listsWrap .movieCard {
+        width: calc(25% - 25px);
+    }
+}
+@media (max-width:768px) {
+    .listsWrap .movieCard {
+        width: calc(33.33% - 25px);
+    }
+    .mainContainer.withSpace {
+        padding-top: 85px;
+    }
+}
+@media (max-width:576px) {
+    .listsWrap .movieCard {
+        width: calc(50% - 10px);
+    }
+    .listsWrap {
+        gap: 20px;
+    }
+}

@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     line-height: 0;
 }
 .footer .leftBlock img{
@@ -36,4 +37,27 @@
 }
 .backToTop.active{
     display: none;
+}
+
+/* Responsive */
+
+@media (max-width:1024px){
+    .footer .leftBlock img {
+        height: 30px;
+    }
+    .movieDetailsWrap .circleRating,
+    .play-icon svg{
+        height: 70px;
+        width: 70px;
+    }
+    .overview p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer .leftBlock img {
+        max-width: 108px;
+    }
 }

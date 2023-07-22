@@ -31,3 +31,32 @@
 .slick-slider .slick-next{
     right: 0;
 }
+
+@media (max-width:1024px) {
+    .sliderContainer{
+        margin-bottom: 60px !important;
+    }
+}
+@media (max-width:767px) {
+    .slick-track {
+        gap: 20px;
+    }
+    .movieCard .circleRating {
+        width: 40px !important;
+        height: 40px !important;
+        bottom: 55px !important;
+    }
+    .movieCard .cardImg{
+        margin-bottom: 12px !important;
+    }
+    .sliderContainer {
+        margin-bottom: 40px !important;
+    }
+    .sliderTitle, .mainTitle {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+}
+

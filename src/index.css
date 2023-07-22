@@ -4,6 +4,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
@@ -29,12 +30,31 @@ img{
 }
 .mainContainer{
     width: 100%;
-    max-width: 1650px;
-    padding: 0 40px;
+    max-width: 1690px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .smallContainer{
   width: 100%;
-  max-width: 1155px;
+  max-width: 1195px;
+  padding: 0 20px;
   margin: auto;
 }
+
+/* Responsive */
+
+
+@media (max-width:1024px) {
+  body{
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width:767px) {
+  body{
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+

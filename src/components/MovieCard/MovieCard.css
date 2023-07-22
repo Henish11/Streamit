@@ -7,8 +7,8 @@
 }
 .movieCard .cardImg{
     width: 100%;
-    min-width: 244px;
-    height: 365px;
+    /* min-width: 244px; */
+    /* height: 365px; */
     object-fit: cover;
     object-position: center;
     border-radius: 12px;
@@ -42,4 +42,13 @@
 .movieCard .date{
     font-size: 15px;
     opacity: .5;
+}
+
+
+@media (max-width:576px) {
+    .movieCard h3 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
 }
