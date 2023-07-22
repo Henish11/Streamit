@@ -2,10 +2,14 @@ import React, { useEffect,useState } from 'react'
 import './Header.css'
 import mainLogo from '../../assets/icons/logo.png'
 import { Link } from 'react-router-dom'
+import SearchBox from '../SearchBox/SearchBox'
+import {FiSearch} from 'react-icons/fi'
+import {AiOutlineCloseCircle} from 'react-icons/ai'
 
 const Header = () => {
 
   const [active,setActive] = useState(false)
+  const [searchShow,setSearchShow] = useState(false)
 
   const handleScroll = () => {
       if (window.scrollY >= 80) {
@@ -37,7 +41,8 @@ const Header = () => {
           </ul>
         </div>
         <div className="right-block">
-             <span>Search</span>
+             <span className='searchBlock' onClick={()=>{setSearchShow(!searchShow)}}> { !searchShow ? <FiSearch /> : <AiOutlineCloseCircle />}</span>
+             {searchShow && <SearchBox setSearchShow={setSearchShow} /> }   
         </div>
       </nav>
     </div>

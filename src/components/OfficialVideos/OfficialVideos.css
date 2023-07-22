@@ -17,6 +17,7 @@
 }
 .videoBox{
     cursor: pointer;
+    width: 265px;
 }
 .videoBox img{
     width: 265px;

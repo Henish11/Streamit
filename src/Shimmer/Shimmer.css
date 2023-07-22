@@ -24,6 +24,56 @@
     overflow: hidden;
 }
 
+.movieDetailsWrap.shimmer .imageShimmer{
+   background-color:#16335c;
+   border-radius: 20px;
+   width: 350px;
+   height: 525px;
+}
+.movieDetailsWrap.shimmer .line1,
+.movieDetailsWrap.shimmer .line2,
+.movieDetailsWrap.shimmer .line3,
+.movieDetailsWrap.shimmer .line4,
+.movieDetailsWrap.shimmer .line5,
+.movieDetailsWrap.shimmer .line6,
+.movieDetailsWrap.shimmer .line7,
+.movieDetailsWrap.shimmer .line8{
+    display: flex;
+    width: 100vw;
+    max-width: 600px;
+    height: 20px;
+    border-radius: 20px;
+    background-color:#16335c;
+    margin-bottom: 30px;
+}
+.movieDetailsWrap.shimmer .line2{
+    max-width: 400px;
+}
+.movieDetailsWrap.shimmer .line3{
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+.movieDetailsWrap.shimmer .line5{
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+.movieDetailsWrap.shimmer .line7{
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.movieDetailsWrap.shimmer .line8{
+    max-width: 450px;
+}
+
+.castShimmer .shimmer-card{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.castShimmer .shimmer-card .shimmer-card-effect{
+    height: 45%;
+}
 
 @keyframes float {
     from{
@@ -32,3 +82,4 @@
        left: 80%;
     }
 }
+

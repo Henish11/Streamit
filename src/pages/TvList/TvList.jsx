@@ -22,7 +22,7 @@ const TvList = () => {
   },[page])
 
   const scrollHandle = () =>{
-    if (window.innerHeight + document.documentElement.scrollTop + 1 >= document.documentElement.scrollHeight){
+    if (window.innerHeight + document.documentElement.scrollTop + 1 >= document.documentElement.scrollHeight - 80){
         setPage(page =>  page + 1)
     }
   }

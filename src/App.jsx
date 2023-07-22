@@ -10,6 +10,7 @@ import { getUrl } from './redux/homeSlice'
 import MovieDetails from './pages/MovieDetails/MovieDetails'
 import MovieList from './pages/MovieList/MovieList'
 import TvList from './pages/TvList/TvList'
+import Search from './pages/Search/Search'
 
 const App = () => {
   const [data,setData] = useState(false)
@@ -33,6 +34,7 @@ const App = () => {
             <Route path='/:params/:id' element={<MovieDetails/>} />
             <Route path='/movie' element={<MovieList/>} />
             <Route path='/tv' element={<TvList/>} />
+            <Route path='/search/:query' element={<Search/>} />
             <Route path='*' element={<Errors />}/>
           </Route>
         </Routes>

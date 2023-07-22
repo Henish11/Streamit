@@ -17,7 +17,7 @@ export const requests = {
 }
 
 
-export const SEARCH_URL = `${BASE_URL}/search/keyword?api_key=${API_KEY}`
+export const SEARCH_URL = `${BASE_URL}/search/multi?api_key=${API_KEY}`
 
 
 

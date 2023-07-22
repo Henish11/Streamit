@@ -1,0 +1,42 @@
+
+.errorWrap{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errorWrap button{
+    background-color: rgb(229 9 20 / 75%);
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 8px;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+}   
+.errorWrap h1,
+.errorWrap h2{
+    font-size: 400px;
+    line-height: 400px;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    text-shadow: 2px 2px 40px rgb(229, 9, 20,0.7);
+}
+
+.errorWrap h2{
+    font-size: 60px;
+    line-height: 70px;
+    margin: 30px 0;
+}
+.errorWrap h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}

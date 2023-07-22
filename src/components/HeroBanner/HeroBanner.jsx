@@ -3,6 +3,9 @@ import {requests } from '../../utils/config'
 import axios from 'axios'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 import './HeroBanner.css'
+import { useNavigate } from 'react-router-dom'
+import {FaPlay} from 'react-icons/fa'
+
 
 
 const HeroBanner = ({data}) => {
@@ -11,6 +14,7 @@ const HeroBanner = ({data}) => {
   const[bannerInfo,setBannerInfo] = useState('')
 
   const imgbaseUrl = useSelector((store)=>store.home.url)
+  const navigate = useNavigate()
 
   const getBannerData = ()=>{
         axios.get(requests.fetchTrending)
@@ -41,7 +45,7 @@ const HeroBanner = ({data}) => {
          <div className="banner-content ">
             <h1>{bannerInfo?.name || bannerInfo?.title}</h1>
             <p>{bannerInfo?.overview}</p>
-            <button className='play-btn'>Play</button> <button className='info-btn'>More Info</button>
+            <button className='playBtn' onClick={()=>{navigate(`/movie/${bannerInfo?.id}`)}}> <FaPlay/> Play Now</button>
          </div>
        </div>
     </div>

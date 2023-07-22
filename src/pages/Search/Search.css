@@ -1,0 +1,19 @@
+
+.searchList{
+    padding-bottom: 80px;
+}
+
+.notFound{
+    height: 100vh;
+    text-align: center;
+}
+.notFound svg{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.notFound svg path{
+    fill: #e50914;
+    opacity: 0.5
+}
