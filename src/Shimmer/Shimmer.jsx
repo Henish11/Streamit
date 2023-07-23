@@ -95,3 +95,16 @@ export const CastShimmer = () =>{
     </>
   )
 }
+
+export const MoviesCardShimmer = () =>{
+   return(
+    <div className="shimmer-card"> 
+                <div className="shimmer-card-effect"></div>
+                <div className="img"></div>
+                <div className="title">
+                  <span></span>
+                  <span></span>
+                </div>
+    </div>
+   )
+}

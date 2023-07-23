@@ -1,6 +1,6 @@
 .cardShimmer-wrap{
     display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
     gap: 30px;
 }
 .cardShimmer-wrap.castShimmer{
@@ -33,6 +33,9 @@
     box-shadow: 0 0 50px 10px #28538f70;
     animation: float 0.5s infinite alternate;
     overflow: hidden;
+}
+.moviesCardShimmer{
+    height: 360px;
 }
 
 .movieDetailsWrap.shimmer .imageShimmer{
@@ -121,6 +124,10 @@
    .cardShimmer-wrap.listShimmer .shimmer-card{
       height: 330px;
    }
+   .shimmer-card {
+    width: 250px;
+    height: 350px;
+}
 }
 @media (max-width:1199px){
     .castShimmer .shimmer-card {
@@ -228,8 +235,13 @@
     .cardShimmer-wrap.listShimmer .shimmer-card{
         height: 250px;
     }
-
-    
+    .shimmer-card {
+        width: 170px;
+        height: 270px;
+    }
+    .cardShimmer-wrap {
+        gap: 20px;
+    }
 }
 @media (max-width:380px){
     .castShimmer .shimmer-card {

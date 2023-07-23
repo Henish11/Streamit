@@ -6,12 +6,13 @@ import { useSelector } from 'react-redux';
 import './MovieCard.css'
 import dayjs from 'dayjs';
 import Img from '../LazyLoadImage/Img';
+import { MoviesCardShimmer } from '../../Shimmer/Shimmer';
 
 const MovieCard = ({ ele }) => {
 
     const ImagebaseUrl = useSelector((store) => store.home.url)
     const navigate = useNavigate()
-    return ele?.poster_path && (
+    return ele.poster_path ? (
         <div className="movieCard" key={uuidv4()}
             onClick={() => {
                 navigate(`/${ele?.first_air_date ? 'tv' : 'movie'}/${ele?.id}`)
@@ -27,6 +28,8 @@ const MovieCard = ({ ele }) => {
                 <span className="date">{  dayjs(ele.release_date).format("MMM DD, YYYY") || dayjs(ele?.first_air_date).format("MMM DD, YYYY")}</span>
             </div>
         </div>
+    ) : (
+        <MoviesCardShimmer/>
     )
 }
 
