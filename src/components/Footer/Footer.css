@@ -1,6 +1,7 @@
 .footer{
     background-color: #051c3d;
     padding: 15px 0;
+    margin-top: 50px;
 }
 .footer .mainContainer{
     display: flex;
@@ -45,19 +46,18 @@
     .footer .leftBlock img {
         height: 30px;
     }
-    .movieDetailsWrap .circleRating,
-    .play-icon svg{
-        height: 70px;
-        width: 70px;
-    }
-    .overview p {
-        font-size: 16px;
-        line-height: 23px;
-    }
 }
 
 @media (max-width:767px) {
     .footer .leftBlock img {
         max-width: 108px;
+    }
+    .backToTop{
+        width: 40px;
+        height: 40px;
+        line-height: 50px;
+    }
+    .backToTop svg {
+        font-size: 20px;
     }
 }

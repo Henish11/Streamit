@@ -3,6 +3,17 @@
     flex-wrap: wrap;
     gap: 30px;
 }
+.cardShimmer-wrap.castShimmer{
+    flex-wrap: nowrap;
+}
+.cardShimmer-wrap.listShimmer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.cardShimmer-wrap.listShimmer .shimmer-card{
+    width: auto;
+}
+
 .shimmer-card{
     width: 244px;
     height:400px ;
@@ -83,3 +94,146 @@
     }
 }
 
+@media (max-width:1440px) {
+    .cardShimmer-wrap.listShimmer{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .cardShimmer-wrap.listShimmer .shimmer-card{
+        height: 360px;
+    }
+}
+
+@media (max-width:1279px) {
+    .movieDetailsWrap.shimmer .imageShimmer {
+        width: 300px;
+        height: 480px;
+    }
+    .movieDetailsWrap.shimmer .line1,
+    .movieDetailsWrap.shimmer .line2,
+     .movieDetailsWrap.shimmer .line3,
+      .movieDetailsWrap.shimmer .line4,
+       .movieDetailsWrap.shimmer .line5,
+        .movieDetailsWrap.shimmer .line6,
+         .movieDetailsWrap.shimmer .line7,
+          .movieDetailsWrap.shimmer .line8 {
+       height: 18px;
+   }
+   .cardShimmer-wrap.listShimmer .shimmer-card{
+      height: 330px;
+   }
+}
+@media (max-width:1199px){
+    .castShimmer .shimmer-card {
+        width: 170px;
+        height: 170px;
+        margin-bottom: 0px;
+    }
+    .cardShimmer-wrap.listShimmer{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .cardShimmer-wrap.listShimmer .shimmer-card{
+        height: 320px;
+    }
+}
+
+@media (max-width:840px){
+    .movieDetailsWrap.shimmer .line1,
+     .movieDetailsWrap.shimmer .line2,
+      .movieDetailsWrap.shimmer .line3,
+       .movieDetailsWrap.shimmer .line4,
+        .movieDetailsWrap.shimmer .line5,
+         .movieDetailsWrap.shimmer .line6,
+          .movieDetailsWrap.shimmer .line7,
+           .movieDetailsWrap.shimmer .line8 {
+        max-width: 370px;
+        height: 15px;
+    }
+    .movieDetailsWrap.shimmer .line2 {
+        max-width: 300px;
+    }
+    .movieDetailsWrap.shimmer .line3 {
+        max-width: 350px;
+    }
+    .movieDetailsWrap.shimmer .line5 {
+        max-width: 150px;
+    }
+    .movieDetailsWrap.shimmer .line7 {
+        max-width: 240px;
+    }
+    .movieDetailsWrap.shimmer .line8 {
+        max-width: 350px;
+    }
+    .movieDetailsWrap.shimmer .imageShimmer {
+        width: 280px;
+        height: 425px;
+    }
+    .cardShimmer-wrap.castShimmer {
+        gap: 15px;
+    }
+    .cardShimmer-wrap.listShimmer{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .cardShimmer-wrap.listShimmer .shimmer-card{
+        height: 300px;
+    }
+}
+
+@media (max-width:767px){
+    .movieDetailsWrap.shimmer .line1,
+     .movieDetailsWrap.shimmer .line2,
+      .movieDetailsWrap.shimmer .line3,
+       .movieDetailsWrap.shimmer .line4,
+        .movieDetailsWrap.shimmer .line5,
+         .movieDetailsWrap.shimmer .line6,
+          .movieDetailsWrap.shimmer .line7,
+           .movieDetailsWrap.shimmer .line8 {
+        max-width: 280px;
+        height: 12px;
+    }
+    .movieDetailsWrap.shimmer .line2 {
+        max-width: 200px;
+    }
+    .movieDetailsWrap.shimmer .line3 {
+        max-width: 240px;
+    }
+    .movieDetailsWrap.shimmer .line5 {
+        max-width: 100px;
+    }
+    .movieDetailsWrap.shimmer .line7 {
+        max-width: 190px;
+    }
+    .movieDetailsWrap.shimmer .line8 {
+        max-width: 260px;
+    }
+    .movieDetailsWrap.shimmer .imageShimmer {
+        width: 280px;
+        height: 425px;
+    }
+    .movieDetailsWrap.shimmer .imageShimmer {
+        width: 235px;
+        height: 380px;
+    }
+}
+@media (max-width:576px) {
+    .movieDetailsWrap.shimmer .imageShimmer {
+        width: 235px;
+        height: 330px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .cardShimmer-wrap.listShimmer{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .cardShimmer-wrap.listShimmer .shimmer-card{
+        height: 250px;
+    }
+
+    
+}
+@media (max-width:380px){
+    .castShimmer .shimmer-card {
+        width: 150px;
+        height: 150px;
+    }
+}

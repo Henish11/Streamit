@@ -1,6 +1,6 @@
 
 .searchList{
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 .notFound{
@@ -16,4 +16,29 @@
 .notFound svg path{
     fill: #e50914;
     opacity: 0.5
+}
+
+@media (max-width:1024px){
+    .notFound svg {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .notFound .sliderTitle,.notFound .mainTitle {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width:576px){
+    .notFound svg {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .notFound .sliderTitle,.notFound .mainTitle {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
 }

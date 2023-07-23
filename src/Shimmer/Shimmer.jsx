@@ -27,7 +27,7 @@ export const CardShimmer = () => {
 export const ListShimmer = () => {
   return (
     <>
-      <div className="cardShimmer-wrap">
+      <div className="cardShimmer-wrap listShimmer">
         {
           Array(18).fill(0).map(() => {
             return(<div className="shimmer-cards" key={uuidv4()}>

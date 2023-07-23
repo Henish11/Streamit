@@ -18,12 +18,15 @@
     padding: 30px;
     border-radius: 10px;
     position: relative;
+    width: 100%;
+    max-width: 900px;
 }
 .modalWrap .modalContainer h3{
     margin-bottom: 15px;
 }
 .modalWrap .modalContainer iframe{
     border-radius: 10px;
+    height: 500px;
 }
 .modalWrap .close-btn{
     font-size: 25px;
@@ -33,4 +36,38 @@
     cursor: pointer;
 }
 
+@media (max-width:1023px){
+    .modalWrap .modalContainer{
+        max-width: 600px;
+        padding: 20px;
+    }
+    .modalWrap .modalContainer iframe{
+        height: 350px;
+    }
+    .modalWrap .close-btn {
+        font-size: 20px;
+        right: 20px;
+        top: 20px;
+    }
+}
 
+@media (max-width:767px) {
+    .modalWrap .modalContainer {
+        max-width: 90vw;
+        padding: 15px;
+    }
+    .modalWrap .close-btn {
+        font-size: 20px;
+        right: 15px;
+        top: 15px;
+    }
+    .modalWrap .modalContainer h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:576px){
+    .modalWrap .modalContainer iframe{
+        height: 280px;
+    }
+}

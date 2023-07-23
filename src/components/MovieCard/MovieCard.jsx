@@ -11,7 +11,7 @@ const MovieCard = ({ ele }) => {
 
     const ImagebaseUrl = useSelector((store) => store.home.url)
     const navigate = useNavigate()
-    return (
+    return ele?.poster_path && (
         <div className="movieCard" key={uuidv4()}
             onClick={() => {
                 navigate(`/${ele?.first_air_date ? 'tv' : 'movie'}/${ele?.id}`)

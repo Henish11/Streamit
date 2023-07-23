@@ -24,6 +24,10 @@
 .mainTitle{
     margin-left: 0;
 }
+.slick-slider .slick-prev,
+.slick-slider .slick-next{
+    top:calc(50% - 50px)
+}
 .slick-slider .slick-prev{
     left: 0;
     z-index: 99;

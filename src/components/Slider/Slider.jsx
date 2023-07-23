@@ -45,7 +45,7 @@ const MainSlider = ({ data }) => {
     <>
       <Slider {...settings}>
          {
-          data.map((ele)=>{
+          data.filter((ele) => ele?.poster_path !== null).map((ele)=>{
             return  <MovieCard ele={ele} key={uuidv4()}/>
           })
          }

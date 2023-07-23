@@ -40,3 +40,62 @@
     font-weight: 500;
     margin-bottom: 30px;
 }
+
+
+@media (max-width:1279px) {
+    .errorWrap h1{
+      font-size: 300px;
+      line-height: 300px;
+   }
+   .errorWrap h2 {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 25px 0;
+   }
+   .errorWrap h3 {
+    font-size: 30px;
+    line-height: 40px;
+   }
+   .errorWrap button {
+    font-size: 18px;
+    line-height: 28px;
+    width: 170px;
+    height: 50px;
+   }
+}
+@media (max-width:767px){
+    .errorWrap h1{
+        font-size: 200px;
+        line-height: 200px;
+     }
+     .errorWrap h2 {
+        font-size: 35px;
+        line-height: 45px;
+        margin: 25px 0;
+       }
+       .errorWrap h3 {
+        font-size: 25px;
+        line-height: 35px;
+       }
+}
+@media (max-width:575px){
+    .errorWrap h1{
+        font-size: 150px;
+        line-height: 150px;
+     }
+     .errorWrap h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 25px 0;
+       }
+       .errorWrap h3 {
+        font-size: 20px;
+        line-height: 30px;
+       }
+       .errorWrap button {
+        font-size: 16px;
+        line-height: 26px;
+        width: 150px;
+        height: 40px;
+       }
+}

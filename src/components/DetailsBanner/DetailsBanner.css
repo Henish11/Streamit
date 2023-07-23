@@ -155,6 +155,17 @@
         max-width: 300px;
     }
 }
+@media (max-width:1024px){
+    .movieDetailsWrap .circleRating,
+    .play-icon svg{
+        height: 70px;
+        width: 70px;
+    }
+    .overview p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
 
 @media (max-width:576px) {
     .movieDetailsWrap{
@@ -167,12 +178,17 @@
         line-height: 30px;  
     }
     .movieDetailsWrap .left-block {
-        max-width: 250px;
+        max-width: 230px;
         margin: auto;
     }
     .movieDetailsWrap .left-block  img{
         border-radius: 10px;
     }
-    
+    .detailsBanner {
+        padding-top: 90px;
+    }
+    .movieDetailsWrap .sub-title {
+        font-size: 20px;
+    }
     
 }

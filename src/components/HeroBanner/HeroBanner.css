@@ -141,4 +141,7 @@
     .header{
         height: 55px;
     }
+    .hero-banner {
+        height: 80vh;
+    }
 }
