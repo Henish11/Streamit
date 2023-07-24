@@ -48,7 +48,7 @@ const DetailsBanner = ({ movieDetails, video }) => {
                                 {video.length !== 0 &&
                                     <div className='play-icon' onClick={() => { setOpenModal(true) }}>
                                         <PlayIcon />
-                                        <h4>Watch Trailer</h4>
+                                        <h4>Watch Now</h4>
                                     </div> 
                                 }
                                 {openModal &&
